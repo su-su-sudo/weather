@@ -1,0 +1,159 @@
+/*
+color palette 
+#142850 - dark blue
+#27496d - lighter blue
+#00909e - turqouisey
+#dae1e7 - greyish white
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+background-color: #27496d;
+color: #dae1e7;
+}
+
+button{
+    padding: 5px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: #dae1e7;
+    border: 1px solid;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+header{
+    padding: 30px 30px 20px;
+    font-size: 1.5rem;
+    background-color: #142850;
+    text-align: center;
+    text-shadow: 2px 2px #27496d;
+}
+
+.currentSummary header{
+    font-size: 1rem;
+    padding:10px 0 20px 0;
+    background-color: inherit;
+}
+
+hr{
+    margin:15px 0;
+}
+form{
+
+}
+
+footer{
+    align-items: center;
+    background-color: #142850;
+    font-size: .5rem;
+    color: #dae1e7;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    padding:10px 10px 0px 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+th{
+    display:block;
+    font-weight: normal;
+}
+tbody{
+    vertical-align: middle;
+}
+tr{
+    border-top: 1px solid #27496d;
+    display:block;
+    padding:5px;
+}
+
+
+.arrow{
+    border-radius: 50%;
+}
+.content{
+    padding:15px;
+    overflow: scroll;
+}
+.current-set{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+}
+.current{
+    display: inline-flex;
+    text-align: left;
+    width: 60%;
+}
+
+.currentSummary{
+    float: left;
+    width: 100%;
+    padding:15px;
+    border: 3px solid;
+    position: relative;
+}
+
+.daily-card{
+    font-size: .9rem;
+}
+.daily-day{
+    font-size: 1rem;
+    padding: 10px 0 5px;
+    text-decoration: underline;
+}
+
+.hours {
+    display: flex;
+    overflow: scroll;
+}
+.hour {
+    padding: 5px;
+    border-right: 1px solid #dae1e7;
+    font-size: .65rem;
+}
+.hour-icon{
+    height: 25px;
+    width: 25px;
+    filter: invert(.9);
+}
+.hour-main-summary{
+    padding: 15px;
+}
+.hour-summary{
+    font-size: smaller;
+}
+.hour-time{
+    text-decoration: underline;
+}
+.icon{
+    float:right;
+    height: 72px;
+    width: 72px;
+    filter: invert(.9);
+}
+.rightNow{
+    padding: 10px 20px 10px 10px;
+    background-image: linear-gradient(to right,#dae1e7, #27496d);
+    color:#142850;
+    float:right;
+    width: 40%;
+}
+.sumaryWrapper{
+    float:left;
+}
+.temperature{
+    font-size: 2.5rem;
+}
+.zipcode{
+    padding: 10px 30px;
+    background-color: #142850;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.3);
+
+}
